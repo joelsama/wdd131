@@ -1,0 +1,9 @@
+/* Keep navigation stacked vertically even on large screens */
+nav {
+    flex-direction: column;
+}
+
+/* Adjust gallery for large screens */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}

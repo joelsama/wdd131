@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* NAVIGATION MENU */
+nav {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    padding-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: darkviolet;
+    border-radius: 5px;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
