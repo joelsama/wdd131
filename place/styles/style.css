@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #ECF0F1;
@@ -5,6 +6,7 @@
     --highlight-color: #8E44AD;
 }
 
+/* Global Styles */
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
@@ -12,6 +14,7 @@ body {
     color: var(--secondary-color);
 }
 
+/* Header Styles */
 header {
     text-align: center;
     padding: 1.5rem;
@@ -23,6 +26,7 @@ header h1 {
     margin: 0;
 }
 
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
@@ -33,17 +37,20 @@ header h1 {
     height: auto;
 }
 
+/* Weather Section */
 .weather {
     text-align: center;
     margin: 2rem auto;
     color: var(--highlight-color);
 }
 
-.weather .weather-icon {
-    font-size: 1.2em;
+.weather h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
     margin-left: 0.5rem;
 }
 
+/* Footer Styles */
 footer {
     background-color: var(--accent-color);
     color: var(--secondary-color);
@@ -52,6 +59,7 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Responsive Design */
 @media (min-width: 500px) {
     header, footer {
         font-size: 1.2rem;
